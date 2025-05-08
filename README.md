@@ -18,3 +18,7 @@ type UserKeys = keyof User;
 
 
 ## 🔑  Provide an example of using union and intersection types in TypeScript.
+
+### 🔗 Union Types
+
+
