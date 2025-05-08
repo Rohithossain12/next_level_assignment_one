@@ -27,7 +27,7 @@
     console.log(filterByRating(books));
 
 
-    
+
 
     const concatenateArrays = <T>(...arrays: T[][]): T[] => {
         let result: T[] = [];
@@ -78,6 +78,20 @@
     const myCar = new Car("BMW", 2025, "BMW X1 sDrive18i")
     console.log(myCar.getInfo());
     console.log(myCar.getModel());
+
+
+
+
+    const processValue = (value: string | number): number => {
+        if (typeof value === "string") {
+            return value.length
+        } else {
+            return value * 2
+        }
+    }
+
+    processValue("Programming");
+    processValue(10);
 
 
 }
