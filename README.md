@@ -26,9 +26,10 @@ type UserKeys = keyof User;
 ## 📋 Example:
 let value: string | number;
 
-value = "Hello, TypeScript!"; 
-value = 100;                  
-value = true;    
+value = "Hello, TypeScript!"; // valid
+value = 100;                   // valid
+value = true;                  // Error: Type 'boolean' is not assignable to type 'string | number'.
+
 
 ### 🔗  intersection  Types
 
