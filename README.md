@@ -8,4 +8,5 @@ type User = {
 };
 
 type UserKeys = keyof User;
+
 "name" | "age" | "email"
