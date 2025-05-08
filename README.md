@@ -24,13 +24,14 @@ type UserKeys = keyof User;
 #### Union types allow a variable to hold more than one type. A variable can be one type or another, but not both at the same time.
 
 ## 📋 Example:
-function displayValue(value: string | number): string {
+``function displayValue(value: string | number): string {
   if (typeof value === "string") {
     return `The value is a string: ${value}`;
   } else {
     return `The value is a number: ${value}`;
   }
 }
+```
 
 
 ### 🔗  intersection  Types
