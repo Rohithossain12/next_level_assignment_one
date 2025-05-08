@@ -13,8 +13,12 @@
 
 
 
-    const filterByRating = (items: { title: string; rating: number }[]): { title: string; rating: number }[] =>
-        items.filter(item => item.rating >= 4);
+
+
+    const filterByRating = (items: { title: string; rating: number }[]): { title: string; rating: number }[] => {
+        return items.filter(item => item.rating >= 4);
+    };
+
 
     const books = [
         { title: "Book A", rating: 4.5 },
@@ -39,9 +43,9 @@
     };
 
 
-    console.log(concatenateArrays(["Jhankar vai", 'Mezba Vai', "Mir Vai", "Tonmoy Vai"]));
-    console.log(concatenateArrays([1, 2], [3, 4], [5]));
-    console.log(concatenateArrays([true, false], [true]));
+    // console.log(concatenateArrays(["Jhankar vai", 'Mezba Vai', "Mir Vai", "Tonmoy Vai"]));
+    // console.log(concatenateArrays([1, 2], [3, 4], [5]));
+    // console.log(concatenateArrays([true, false], [true]));
 
 
 
@@ -76,9 +80,9 @@
     }
 
 
-    const myCar = new Car("BMW", 2025, "BMW X1 sDrive18i")
-    console.log(myCar.getInfo());
-    console.log(myCar.getModel());
+    // const myCar = new Car("BMW", 2025, "BMW X1 sDrive18i")
+    // console.log(myCar.getInfo());
+    // console.log(myCar.getModel());
 
 
 
@@ -91,8 +95,8 @@
         }
     }
 
-    processValue("programming");
-    processValue(10);
+    // processValue("programming");
+    // processValue(10);
 
 
 
@@ -110,12 +114,39 @@
     };
 
 
-    const products = [
-        { name: "Pen", price: 100 },
-        { name: "Bag", price: 500 },
-        { name: "Notebook", price: 250 },
-    ];
-    getMostExpensiveProduct(products);
+    // const products = [
+    //     { name: "Pen", price: 100 },
+    //     { name: "Bag", price: 500 },
+    //     { name: "Notebook", price: 250 },
+    // ];
+    // getMostExpensiveProduct(products);
+
+
+
+
+
+
+    enum Day {
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+
+    const getDayType = (day: Day): string => {
+        if (day === Day.Saturday || day === Day.Sunday) {
+            return "Weekend"
+        } else {
+            return "Weekday"
+        }
+    }
+
+
+    // getDayType(Day.Monday);
+    // getDayType(Day.Sunday);
 
 
 
@@ -131,8 +162,8 @@
     };
 
 
-    squareAsync(4).then(console.log);
-    squareAsync(-3).catch(console.error);
+    // squareAsync(4).then(console.log);
+    // squareAsync(-3).catch(console.error);
 
 
 
