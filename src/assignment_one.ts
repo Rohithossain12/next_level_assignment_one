@@ -1,8 +1,9 @@
 {
 
 
-    const formatString = (input: string, toUpper: boolean = true): string =>
-        toUpper ? input.toUpperCase() : input.toLowerCase();
+    const formatString = (input: string, toUpper: boolean = true): string => {
+        return toUpper === false ? input.toLowerCase() : input.toUpperCase()
+    }
 
 
     console.log(formatString("Hello"));
@@ -90,8 +91,31 @@
         }
     }
 
-    processValue("Programming");
+    processValue("programming");
     processValue(10);
+
+
+
+
+    interface Product {
+        name: string;
+        price: number;
+    }
+
+    const getMostExpensiveProduct = (products: Product[]): Product | null => {
+
+        if (products.length === 0) return null;
+
+        return products.reduce((previous, current) => current.price > previous.price ? current : previous, products[0]);
+    };
+
+
+    const products = [
+        { name: "Pen", price: 100 },
+        { name: "Bag", price: 500 },
+        { name: "Notebook", price: 250 },
+    ];
+    getMostExpensiveProduct(products);
 
 
 }
