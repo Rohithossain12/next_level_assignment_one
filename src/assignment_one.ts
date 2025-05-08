@@ -118,4 +118,26 @@
     getMostExpensiveProduct(products);
 
 
+
+
+
+    const squareAsync = async (n: number): Promise<number> => {
+        if (n < 0) {
+            return Promise.reject(new Error("Negative number not allowed"))
+        }
+
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        return n * n;
+    };
+
+
+    squareAsync(4).then(console.log);
+    squareAsync(-3).catch(console.error);
+
+
+
+
+
+
+
 }
