@@ -11,3 +11,7 @@ type UserKeys = keyof User;
 
 ## 📝 Result:
 "name" | "age" | "email"
+
+
+
+## 🔑  Provide an example of using union and intersection types in TypeScript.
