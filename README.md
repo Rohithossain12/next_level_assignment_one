@@ -24,11 +24,13 @@ type UserKeys = keyof User;
 #### Union types allow a variable to hold more than one type. A variable can be one type or another, but not both at the same time.
 
 ## 📋 Example:
-let value: string | number;
-
-value = "Hello, TypeScript!"; // valid
-value = 100;                   // valid
-value = true;                  // Error: Type 'boolean' is not assignable to type 'string | number'.
+function displayValue(value: string | number): string {
+  if (typeof value === "string") {
+    return `The value is a string: ${value}`;
+  } else {
+    return `The value is a number: ${value}`;
+  }
+}
 
 
 ### 🔗  intersection  Types
