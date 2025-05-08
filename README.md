@@ -1,6 +1,6 @@
-### 🔑 What is the use of the keyof keyword in TypeScript?
-Ans:keyof is a keyword in TypeScript which is used to extract the key type from an object type.
-### 📋 Example:
+## 🔑 What is the use of the keyof keyword in TypeScript?
+#### Ans: keyof is a keyword in TypeScript which is used to extract the key type from an object type.
+## 📋 Example:
 type User = {
   name: string;
   age: number;
@@ -9,5 +9,5 @@ type User = {
 
 type UserKeys = keyof User;
 
-### 📝 Result:
+## 📝 Result:
 "name" | "age" | "email"
